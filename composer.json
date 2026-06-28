@@ -1,0 +1,19 @@
+{
+    "name": "mantekio/wp-edge-images",
+    "description": "Stop WordPress generating intermediate image sizes and serve every size on the fly from an AWS Serverless Image Handler or any Thumbor-compatible CDN. URL layer only, no AWS credentials.",
+    "type": "wordpress-muplugin",
+    "license": "GPL-2.0-or-later",
+    "keywords": ["wordpress", "mu-plugin", "images", "cdn", "cloudfront", "s3", "thumbor", "serverless-image-handler", "responsive-images", "webp", "avif", "performance"],
+    "homepage": "https://github.com/mantekio/wp-edge-images",
+    "authors": [
+        { "name": "ManTek Technologies", "homepage": "https://www.mantek.io" }
+    ],
+    "support": {
+        "issues": "https://github.com/mantekio/wp-edge-images/issues",
+        "source": "https://github.com/mantekio/wp-edge-images"
+    },
+    "require": {
+        "php": ">=7.4",
+        "composer/installers": "^1.0 || ^2.0"
+    }
+}

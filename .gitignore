@@ -1,0 +1,6 @@
+# Composer (this is a plugin, not an app: dependencies are not committed)
+/vendor/
+composer.lock
+
+# macOS
+.DS_Store
