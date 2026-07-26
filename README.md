@@ -100,10 +100,14 @@ is in the write-up:
 
 **→ [Make WordPress do less: offloading media to S3 and the edge](https://www.mantek.io/insights/wordpress-s3-media-pipeline)**
 
+## Changelog
+
+Every release is documented in the [changelog](https://github.com/mantekio/wp-edge-images/blob/main/CHANGELOG.md), and the notes for each version are on the [releases page](https://github.com/mantekio/wp-edge-images/releases).
+
 ## License
 
 [GPL-2.0-or-later](LICENSE): same as WordPress.
 
 ---
 
-Built and maintained by **[ManTek Technologies](https://www.mantek.io)**: WordPress + AWS at scale, for media-grade publishing.
+Built and maintained by **[ManTek Technologies](https://www.mantek.io)**: WordPress + AWS at scale, for newsrooms and beyond.
