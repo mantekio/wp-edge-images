@@ -60,9 +60,18 @@ has two consequences worth knowing:
   { "config": { "allow-plugins": { "composer/installers": true } } }
   ```
 - **Make sure it loads.** It installs into `wp-content/mu-plugins/wp-edge-images/`
-  (a subfolder). Vanilla WordPress only auto-loads `*.php` placed *directly* in
-  `mu-plugins/`, not in subfolders, so either use a mu-plugins autoloader
-  (Bedrock and similar stacks ship one) or use the Manual method above.
+  (a subfolder), and vanilla WordPress only auto-loads `*.php` placed *directly* in
+  `mu-plugins/`, not in subfolders
+  ([WordPress docs](https://developer.wordpress.org/advanced-administration/plugins/mu-plugins/)).
+  Either use a mu-plugins autoloader (Bedrock and similar stacks ship one), use the
+  Manual method above instead, or keep Composer and add a one-line loader directly
+  in `mu-plugins/`:
+  ```php
+  <?php // wp-content/mu-plugins/edge-images-loader.php
+  require WPMU_PLUGIN_DIR . '/wp-edge-images/wp-edge-images.php';
+  ```
+  Pick one: with the Manual copy and a loader both in place, the plugin loads twice
+  and PHP stops with a fatal error.
 
 ## Configuration
 
